@@ -1,8 +1,9 @@
 import mongoose, { Schema } from "mongoose";
 
 const dataSchema = new Schema({
-  itemName: { type: String, require: true },
-  quantity: { type: Number, require: true },
+  componentName: { type: String, required: true },
+  items:{type:Array,required:true},
+  quantity:{type:Number,required:true}
 });
 
 const dataModel = mongoose.model("avaliable", dataSchema);

@@ -2,8 +2,9 @@ import { Schema } from "mongoose";
 import mongoose from "mongoose";
 
 const activeSchema = new Schema({
-  itemName: { type: String, require: true },
-  quantity: { type: Number, require: true },
+  componentName: { type: String, required: true },
+  items:{type:Array,required:true},
+  quantity:{type:Number,required:true},
 });
 
 const activeModel = mongoose.model("active", activeSchema);

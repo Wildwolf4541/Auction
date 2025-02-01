@@ -59,20 +59,20 @@ function Auction() {
         </header>
         {/* Middle Section */}
         <div className="flex flex-1 overflow-hidden">
-          {/* Cart (Middle Left) - Player List */}
+{/*           
           <div className="w-1/3 border-r border-black p-4 overflow-y-auto no-scrollbar bg-[#111] shadow-inner">
             {" "}
-            {/* Darker Background */}
+            
             <h2 className="text-lg font-semibold mb-4 text-[#e0358d] font-serif tracking-tight">
               🛒 Cart
             </h2>{" "}
-            {/* Yellow Text */}
+            
             {inventory ? (
               <ul className="space-y-2">
                 {inventory.map((obj, index) => doRenderItem(obj, index))}
               </ul>
             ) : null}
-          </div>
+          </div> */}
 
           {/* Current Bidding Item - Game Area */}
           <div
@@ -94,7 +94,7 @@ function Auction() {
           </div>
 
           {/* Items for Bidding (Middle Right) - Upcoming Games */}
-          <div className="w-1/3 p-4 overflow-y-auto no-scrollbar bg-[#111] shadow-inner">
+          <div className="w-2/5 p-4 overflow-y-auto no-scrollbar bg-[#111] shadow-inner">
             <h2 className="text-lg font-semibold mb-4 text-[#e0358d] font-serif tracking-wide">
               ⏭️ Upcoming Items for Bid
             </h2>
